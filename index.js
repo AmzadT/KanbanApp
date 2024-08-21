@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3005;
 const userRouter = require('./routes/user.route');
 const taskRouter = require('./routes/task.route');
 const authenticate = require('./middlewares/auth.middleware');
 const dotenv = require('dotenv').config();
 const connection = require('./config/db');
+const PORT = process.env.PORT || 3005;
 const cors = require('cors');
+
 
 // Middleware
 app.use(cors({ origin: "*" }));
