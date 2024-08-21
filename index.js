@@ -28,6 +28,5 @@ app.listen(PORT, async () => {
         console.log(`Server is Running on Port ${PORT} and Connected to the Database`);
     } catch (error) {
         console.error(`Error Occurred while Connecting to the Database: ${error.message}`);
-        process.exit(1);  // Exit the process if the database connection fails
     }
 });
